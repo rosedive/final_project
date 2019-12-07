@@ -1,0 +1,31 @@
+<%= form_with(model: order_book, local: true) do |form| %>
+  <% if order_book.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(order_book.errors.count, "error") %> prohibited this order_book from being saved:</h2>
+
+      <ul>
+        <% order_book.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+   
+    <%= form.hidden_field :user_id, value:  'current_user.id' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :book_id %>
+    <%= form.collection_select :book_id, Book.order(:book_title),:id, :book_title, include_blank: true %>
+  </div>
+  <div class="field">
+  <%= form.label :approved %>
+  <%= form.check_box :approved %>
+</div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
