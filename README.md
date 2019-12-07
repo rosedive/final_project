@@ -30,9 +30,7 @@ Poject Name Book Library App
 
 Overview
 
-A Book Library App is a project that manages and stores books information electronically according to students needs. The system helps both students and library manager to keep a constant track of all the books available in the library. It allows both the admin and the student to search for the desired book.
-
-concept A Book Library App is a software built to handle the primary housekeeping functions of a library. Libraries rely on library management systems to manage asset collections as well as relationships with their members.
+A Book Library App is a project that manages and stores books information electronically according to students needs. The system helps both students and library manager to keep a constant track of all the books available in the library. It allows the admin to create, search, edit and delete book and the student also is allowed to search books that is in library  for the desired book   he/she want to read.
 
 Function List
 
@@ -46,7 +44,7 @@ Function List
 
 * books create, show, edit and delete functions
 
-*  request function using send or create order_book, approve and rejected
+*  show function of the description of book
 
 * User registration Name, email, User_type and password are required
 
